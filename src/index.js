@@ -1,11 +1,27 @@
 import _ from 'lodash';
+import printMe from './print.js';
+import './style.css';
+import Icon from './t010a38863785a67569.jpg';
+
 function component() {
-  var element = document.createElement('div');
+    var element = document.createElement('div');
+    var btn = document.createElement('button');
 
-  // Lodash£¨Ä¿Ç°Í¨¹ıÒ»¸ö script ½Å±¾ÒıÈë£©¶ÔÓÚÖ´ĞĞÕâÒ»ĞĞÊÇ±ØĞèµÄ
-  element.innerHTML = _.join(['Hello', 'webpack1'], ' ');
+    // Lodashï¿½ï¿½Ä¿Ç°Í¨ï¿½ï¿½Ò»ï¿½ï¿½ script ï¿½Å±ï¿½ï¿½ï¿½ï¿½ë£©ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ç±ï¿½ï¿½ï¿½ï¿½
+    element.innerHTML = _.join(['Hello', 'webpack1'], ' ');
+    element.classList.add('hello');
 
-  return element;
+    // å°†å›¾åƒæ·»åŠ åˆ°æˆ‘ä»¬ç°æœ‰çš„ divã€‚
+    var myIcon = new Image();
+    myIcon.src = Icon;
+
+    element.appendChild(myIcon);
+
+    btn.innerHTML = 'Click me and check the console!';
+    btn.onclick = printMe;
+    element.appendChild(btn);
+
+    return element;
 }
 
 document.body.appendChild(component());
