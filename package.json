@@ -1,0 +1,22 @@
+{
+  "name": "webpack_starter",
+  "version": "1.0.0",
+  "description": "a webpack start project",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linglihanWX/webpack_starter.git"
+  },
+  "keywords": [
+    ""
+  ],
+  "author": "wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linglihanWX/webpack_starter/issues"
+  },
+  "homepage": "https://github.com/linglihanWX/webpack_starter#readme"
+}
